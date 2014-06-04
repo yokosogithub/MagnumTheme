@@ -1,0 +1,52 @@
+{{#if @blog.cover }}
+	<div role='banner' class="header_magnum" style="background-image:url('{{@blog.cover}}')">
+		{{#if @blog.logo}}
+		<a class="logo_magnum BounceInLeft" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+		{{/if}}
+		<h1 class="blogtitle_magnum BounceInRight">
+			<a title="{{@blog.title}}" href='{{@blog.url}}'>
+			{{{@blog.title}}}
+			</a>
+		</h1>
+		<h4 class="blogdescription_magnum">
+			<a title="{{@blog.title}}" href='{{@blog.url}}' class="darker_magnum">
+			{{@blog.description}}
+			</a>
+			<ul>
+				<li><i class="fa fa-github-alt fa-2x"></i></li>
+			</ul>
+		</h4>
+	</div>
+{{ else }}
+	<div role='banner' class="header_magnum">
+		{{#if @blog.logo}}
+		<a class="logo_magnum BounceInLeft" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="{{@blog.title}}" /></a>
+		{{/if}}
+		<h1 class="blogtitle_magnum BounceInRight">
+			<a title="{{@blog.title}}" href='{{@blog.url}}'>
+			{{{@blog.title}}}
+			</a>
+		</h1>
+		<h4 class="blogdescription_magnum BounceInLeft">
+			<a title="{{@blog.title}}" href='{{@blog.url}}'>
+			{{@blog.description}}
+			</a>
+		</h4>
+		<ul class="blogicon_magnum BounceInRight">
+			<li><a href="https://github.com/yokosogithub"><i class="fa fa-github fa-lg"></i></a></li>
+			<li><a href="https://plus.google.com/u/0/101848020848969089637/"><i class="fa fa-google-plus fa-lg"></i></a></li>
+			<li><a href="http://segmentfault.com/u/raboxie"><i class="fa fa-stack-overflow fa-lg"></i></a></li>
+			<li><a href="http://weibo.com/u/1649664003/"><i class="fa fa-weibo fa-lg "></i></a></li>
+			<li><a href="mailto:xiepeng1992@gmail.com"><i class="fa fa-envelope fa-lg"></i></a></li>
+		</ul>
+	</div>
+{{/if}}
+	<video id="back-music" autoplay name="media" style="display:none" src=""></video>
+	<script>
+		var musicList = ["http://bcs.duapp.com/rabolbucket/Imagine%20Dragons%20-%20Demons.mp3","http://bcs.duapp.com/rabolbucket/G.E.M-All%20About%20You.mp3","http://bcs.duapp.com/rabolbucket/Klingande%20-%20Jubel.mp3","http://bcs.duapp.com/rabolbucket/Somebody That I Used To Know.mp3","http://bcs.duapp.com/rabolbucket/Medina - Jalousi.mp3"];
+		var videoPlayer = document.getElementById('back-music');
+		videoPlayer.src = musicList[Math.floor(Math.random()*musicList.length)];
+		videoPlayer.onended = function(){
+			videoPlayer.src = musicList[Math.floor(Math.random()*musicList.length)];
+		}
+	</script>
