@@ -277,6 +277,21 @@ ul.blogicon_magnum li {
   float: left;
   margin: 0 5px;
 }
+ul.blogicon_magnum li:nth-child(1) a:hover {
+  color: #575a69;
+}
+ul.blogicon_magnum li:nth-child(2) a:hover {
+  color: #d44837;
+}
+ul.blogicon_magnum li:nth-child(3) a:hover {
+  color: #fd7b0b;
+}
+ul.blogicon_magnum li:nth-child(4) a:hover {
+  color: #e46c79;
+}
+ul.blogicon_magnum li:nth-child(5) a:hover {
+  color: #824c9e;
+}
 .BounceInLeft {
   -webkit-animation-name: bounceinleft;
   -webkit-animation-duration: 2s;
