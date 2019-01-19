@@ -38,3 +38,5 @@ Development will be carried and future versions of Ghost will be supported. Feel
 ####Credits:
 1) [Google Code Prettify](http://code.google.com/p/google-code-prettify/) for syntax highlighting.
 2) [Hosting Ghost on Openshift](https://github.com/Laures/ghost-openshift-quickstart) .
+
+makesomechange
